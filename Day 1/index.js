@@ -1,7 +1,7 @@
 // Getting input via STDIN
 const readline = require("readline");
 
-const { diff, oddeven, perimeterRec, large4, avg3, countVowels, upperCase, revstr, square } = require("./postSession");
+const { diff, oddeven, perimeterRec, large4, avg3, countVowels, upperCase, revstr, square } = require("./day1PostSession");
 
 const inp = readline.createInterface({
     input: process.stdin
