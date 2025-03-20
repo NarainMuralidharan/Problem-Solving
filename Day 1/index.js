@@ -1,8 +1,7 @@
 // Getting input via STDIN
 const readline = require("readline");
 
-const { posnev, maxmin } = require("./day 1");
-const { diff, oddeven, perimeterRec, large4, avg3, countVowels, upperCase, revstr, square } = require("./day 1");
+const { diff, oddeven, perimeterRec, large4, avg3, countVowels, upperCase, revstr, square } = require("./postSession");
 
 const inp = readline.createInterface({
     input: process.stdin
@@ -17,6 +16,8 @@ inp.on("line", (data) => {
 inp.on("close", () => {
     //  start-here
     //  Your code goes here … replace the below line with your code logic 
+
+    // ONLY POST SESSION
 
     // Determine if a number is positive or negative
     // const value = +userInput[0];

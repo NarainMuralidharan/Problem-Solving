@@ -1,44 +1,3 @@
-// In Session
-
-// Determine if a number is positive or negative
-function posnev(num) {
-    if (num > 0) {
-        return "positive";
-    }
-    else if (num < 0) {
-        return "negative";
-    }
-    else {
-        return "zero";
-    }
-}
-
-// Identify the maximum and minimum of three numbers
-function maxmin(num1, num2, num3) {
-    let min = 0, max = 0;
-    if ((num1 >= num2) && (num1 >= num3)) {
-        max = num1;
-    }
-    else if (num2 >= num3) {
-        max = num2;
-    }
-    else
-        max = num3;
-
-    if ((num1 <= num2) && (num1 <= num3)) {
-        min = num1;
-    }
-    else if (num2 <= num3) {
-        min = mum2;
-    }
-    else
-        min = num3;
-
-    return { max, min }
-}
-
-module.exports = { posnev, maxmin };
-
 // Post Session
 
 // Calculate the difference between two integers
@@ -115,8 +74,13 @@ function upperCase(char) {
 
 //Print the reverse of a string
 function revstr(str) {
-    return str.split('').reverse().join('');
+    let rev = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        rev += str[i];
+    }
+    return rev;
 }
+
 
 //Find the square of a number
 function square(num) {
